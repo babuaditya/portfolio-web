@@ -1,4 +1,4 @@
-import React from 'react';
+//@ts-nocheck
 import './Modal.css'; // Assuming you will create a CSS file for styling
 
 const Modal = ({ message, isVisible }) => {
