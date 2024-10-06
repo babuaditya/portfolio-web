@@ -1,0 +1,14 @@
+
+  .flex-row-with-line {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #e96c0f;
+    z-index: -1; /* Adjust the color as needed */
+  }
+  .clip-path {
+    height: 50px;
+    margin-top: 20px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
