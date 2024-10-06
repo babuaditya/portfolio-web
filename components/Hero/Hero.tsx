@@ -11,7 +11,7 @@ function Hero() {
                     </button>
         </div>
         <div className='col-start-6 col-span-12  flex justify-end'>
-            <img src='./image.png' alt='hero' className='w-[340px] h-[380px] object-cover'/>
+            <img src='./image.png' alt='hero' loading="lazy" className='w-[340px] h-[380px] object-cover'/>
             </div>
     </div>
   )

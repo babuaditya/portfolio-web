@@ -17,6 +17,10 @@ const SkillData:{image:string,title:string}[] = [
         title: 'Supabase'
     },
     {
+        image:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg',
+        title: 'Github'
+    },
+    {
         image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg',
         title: 'Go'
     },
