@@ -21,17 +21,18 @@ function App() {
           <Header />
         </div>
       )}
-      <div ref={heroRef} className={`transition-opacity duration-1000 ${heroInView ? 'opacity-100' : 'opacity-0'}`}>
+      
+      <div ref={heroRef as React.LegacyRef<HTMLDivElement>} className={`transition-opacity duration-1000 ${heroInView ? 'opacity-100' : 'opacity-0'}`}>
           <Hero />
         </div>
       </div>
     </div>
       <div className='mx-[40px]  grid-cols-12 gap-5'>
         <AboutMe/>
-        <div ref={skillRef} className={`transition-opacity duration-1000 ${skillInView ? 'opacity-100' : 'opacity-0'}`}>
+        <div ref={skillRef as React.LegacyRef<HTMLDivElement>} className={`transition-opacity duration-1000 ${skillInView ? 'opacity-100' : 'opacity-0'}`}>
           <Skill />
         </div>
-        <div ref={experienceRef} className={`transition-opacity duration-1000 ${experienceInView ? 'opacity-100' : 'opacity-0'}`}>
+        <div ref={experienceRef as React.LegacyRef<HTMLDivElement>} className={`transition-opacity duration-1000 ${experienceInView ? 'opacity-100' : 'opacity-0'}`}>
           <Experience />
         </div>
       </div>

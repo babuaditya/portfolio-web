@@ -1,4 +1,3 @@
-import React from 'react'
 
 function SkillsCard({image, title}:{image:string, title:string}) {
 

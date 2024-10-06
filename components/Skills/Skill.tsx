@@ -1,4 +1,3 @@
-import React from 'react'
 import SkillsCard from './SkillsCard'
 const SkillData:{image:string,title:string}[] = [ 
     {

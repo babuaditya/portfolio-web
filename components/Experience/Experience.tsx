@@ -1,4 +1,3 @@
-import React from 'react'
 import './Experience.css'
 import ExperienceStepper from './ExperianceStepper'
 const ExperienceData:{year:string,title:string,location:string,description:string}[] = [

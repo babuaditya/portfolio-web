@@ -1,5 +1,4 @@
 
-import React from 'react'
 
 function ExperianceStepper({year, title, location, description}:{year:string, title:string, location:string, description:string}) {
   return (
