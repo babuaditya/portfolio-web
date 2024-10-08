@@ -31,7 +31,7 @@ function RecentProject() {
         <h1 className='text-5xl font-bold text-secondary-light mb-16 mt-16 text-center'>Recent Project</h1>
         <div className='flex justify-center items-center '>
 
-        <div  className='grid grid-cols-3 gap-4'>
+        <div  className='grid grid-cols-3 gap-4 max-sm:flex max-sm: flex-col'>
            {HoverCardData.map((item, index) => {
             return( <HoverCard key={index+1} image={item.image} title={item.title} description={item.description} tools={item.tools}/>);
            })}

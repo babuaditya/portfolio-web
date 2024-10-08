@@ -1,33 +1,33 @@
 //@ts-nocheck
 import  { useState, useRef } from 'react';
-import './HoverCard.css'; // Assuming you will create a CSS file for styling
+// import './HoverCard.css'; // Assuming you will create a CSS file for styling
 function HoverCard({image, title, description, tools}) {
   const [isHovered, setIsHovered] = useState(false);
   const [direction, setDirection] = useState('');
   const cardRef = useRef(null);
 
-  const handleMouseEnter = (e) => {
-    const card = cardRef.current;
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
+  // const handleMouseEnter = (e) => {
+  //   const card = cardRef.current;
+  //   const rect = card.getBoundingClientRect();
+  //   const x = e.clientX - rect.left;
 
-    setDirection(x > rect.width / 2 ? 'right' : 'left');
-    setIsHovered(true);
-  };
+  //   setDirection(x > rect.width / 2 ? 'right' : 'left');
+  //   setIsHovered(true);
+  // };
 
-  const handleMouseLeave = (e) => {
-    const card = cardRef.current;
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
+  // const handleMouseLeave = (e) => {
+  //   const card = cardRef.current;
+  //   const rect = card.getBoundingClientRect();
+  //   const x = e.clientX - rect.left;
 
-    setDirection(x > rect.width / 2 ? 'right' : 'left');
-    setIsHovered(false);
-  };
-
+  //   setDirection(x > rect.width / 2 ? 'right' : 'left');
+  //   setIsHovered(false);
+  // };
+  // onMouseEnter={handleMouseEnter}
+  // onMouseLeave={handleMouseLeave}
   return (
-    <div ref={cardRef} className="container"    onMouseEnter={handleMouseEnter}
-    onMouseLeave={handleMouseLeave} >
-  <img src={image} alt="Avatar" className="image rounded-xl" loading='lazy' height={200} width={200}/>
+    <div ref={cardRef} className="flex flex-col bg-primary-light  overflow-hidden rounded-xl px-3 py-3 "     >
+  <img src={image} alt="Avatar" className="image rounded-xl self-center mt-5" loading='lazy' height={200} width={200}/>
   <div className={`overlay ${direction}`}>
     <div className="text rounded-xl">
         <h1 className='text-center font-bold text-2xl mt-10'>Tools & Technologies</h1>

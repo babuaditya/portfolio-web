@@ -5,7 +5,7 @@ const Modal = ({ message, isVisible }) => {
   if (!isVisible) return null;
 
   return (
-    <div className="modal-overlay">
+    <div className="modal-overlay max-sm:hidden">
       <div className="modal-content">
         <p>{message}</p>
       </div>

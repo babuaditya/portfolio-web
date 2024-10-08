@@ -44,10 +44,11 @@ const SkillData:{image:string,title:string}[] = [
 ]
 function Skill() {
     return (
-        <div className='grid grid-cols-4  gap-5 mt-9'>
-            <div className='col-span-4 flex justify-center items-center'>
-                <h1 className='text-5xl font-bold text-secondary-light mb-10'>Skills</h1>
+        <div className='grid lg:grid-cols-4  grid-cols-2  gap-5 mt-9'>
+            <div className='lg:col-span-4 flex justify-center items-center w-full'>
+                <h1 className='text-5xl font-bold text-secondary-light mb-10  text-center'>Skills</h1>
                 </div>
+                <div></div>
             {SkillData.map((item, index) => {
                 
                 return(

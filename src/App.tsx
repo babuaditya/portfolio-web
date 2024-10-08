@@ -29,7 +29,7 @@ function App() {
         isVisible={showModal}
       />}
       <div className='bg-[#F9E7DB] grid font-inter '>
-        <div className='mx-[110px] grid-cols-12 gap-5'>
+        <div className='mx-[110px] max-sm:mx-[10px] grid-cols-12 gap-5'>
           <Header />
           {scrollDirection === 'down' && (
             <div className='fixed top-0 left-0 w-full bg-white py-4 shadow-md z-50 transition-transform duration-300 transform translate-y-0 '>
@@ -42,7 +42,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='mx-[40px] grid-cols-12 gap-5'>
+      <div className='lg:mx-[40px] mx-2 lg:grid-cols-12 lg:gap-5'>
         <AboutMe />
         <div ref={skillRef as React.LegacyRef<HTMLDivElement>} className={`transition-opacity duration-1000 ${skillInView ? 'opacity-100' : 'opacity-0'}`}>
           <Skill />

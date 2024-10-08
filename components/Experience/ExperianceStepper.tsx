@@ -3,7 +3,7 @@
 function ExperianceStepper({year, title, location, description}:{year:string, title:string, location:string, description:string}) {
   return (
     <div className='flex flex-row gap-24'>
-<div className='px-10 py-15  bg-primary-light clip-path '>
+<div className='px-10 py-15  bg-primary-light clip-path max-sm:hidden max-sm:mx-2'>
     <h1 className='text-white font-bold text-4xl text-center my-1'>{year}</h1>
 </div>
 <div className='flex flex-row gap-4 relative '> 
@@ -11,7 +11,7 @@ function ExperianceStepper({year, title, location, description}:{year:string, ti
     
     </div>
     <div>
-    <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+    <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" >
 <circle r="10" cx="15" cy="15" fill="#302A25" />
 </svg>
     </div>

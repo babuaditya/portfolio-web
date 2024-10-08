@@ -11,11 +11,11 @@ const HeaderData:typeHeaderData={
 }
 function Header() {
   return (
-    <div className='flex flex-row justify-between items-center my-1'>
-    <div className='logo'>
-        <h1 className='text-3xl font-bold text-primary-light'>Aditya <span className='text-black ml-2'>Sol.</span></h1>
+    <div className='flex flex-row justify-between items-center my-1 '>
+    <div className='logo max-sm'>
+        <h1 className='text-3xl font-bold text-primary-light '>Aditya <span className='text-black ml-2 '>Sol.</span></h1>
     </div>
-    <div className='nav'>
+    <div className='nav max-sm:hidden max-md:hidden'>
         <ul className='flex flex-row gap-5 items-center justify-center text-2xl text-secondary-light'>
         {HeaderData.nav.map((item, index) => {
             return(

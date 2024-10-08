@@ -2,13 +2,13 @@
 const Card=({image,title,description})=>{
     return(
         <div className='flex justify-between items-center bg-white rounded-md shadow-md p-5 mb-4'>
-        <div className='flex  justify justify-between gap-6'>
+        <div className='flex   justify-between gap-6 max-sm:flex-col'>
             <div className='flex justify-center items-center'>
             <div className=' bg-[#F9E7DB] p-5 rounded-[50%]'>
             <img src={image} height={"80px"} width={"80px"} alt="website-logo" className='max-w-none'/>
                 </div>
             </div>
-                <div>
+                <div className="">
                     <h1 className='text-2xl font-bold text-secondary-light'>
                        {title}</h1>
                     <p className='text-justify mt-5 text-lg font-semibold text-secondary-light'>
@@ -42,16 +42,17 @@ const ServiceData:{
 ]
 function Porfolio() {
   return (
-    <div className='mt-24 grid grid-cols-12  gap-10 '>
+    <div className='mt-24 lg:grid grid-cols-12 max-sm:flex max-sm:flex-col-reverse  gap-10 '>
+               
         {/* <h1 className='text-5xl font-bold text-secondary-light mb-16 text-center'>Services</h1> */}
        
-        <div className='bg-[#F9E7DB] p-10 col-span-5 rounded-md '>
+        <div className='bg-[#F9E7DB] p-10 lg:col-span-5 rounded-md '>
            {ServiceData.map((item, index) => {
             return( <Card key={index+1} image={item.image} title={item.title} description={item.description}/>);
            })}
         </div>
-        <div className='col-start-7 col-end-13  '>
-        <div className='flex items-center'>
+        <div className='col-start-7 col-end-13 max-sm:mx-10  '>
+        <div className='flex items-center '>
            <h1 className='text-6xl text-secondary-light font-extrabold text-center'>My Awesome
             <h1 className='text-primary-light text-left'>Services</h1>
             </h1><br/>
